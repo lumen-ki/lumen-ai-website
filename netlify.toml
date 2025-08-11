@@ -1,0 +1,21 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[dev]
+  command = "npm run dev"
+  port = 5173
+  publish = "dist"
+
+# SPA-Redirect: leitet alle Routen auf index.html, damit dein React-Router funktioniert
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# www -> non-www (SEO-konsistent). Wenn du lieber www erzwingen willst, sag Bescheid und ich dreh's um.
+[[redirects]]
+  from = "https://www.lumen-ai.de/*"
+  to = "https://lumen-ai.de/:splat"
+  status = 301
+  force = true
