@@ -28,12 +28,16 @@
   <body>
     <div id="root"></div>
 
-    <!-- Hidden Netlify Form (für Formular-Erkennung) -->
-    <form name="beratung" netlify netlify-honeypot="bot-field" hidden>
-  <input type="text" name="name" />
-  <input type="email" name="email" />
-  <textarea name="message"></textarea>
-  </form>
+    <!-- Hidden Netlify Form registration (muss im <body> stehen) -->
+    <form name="beratung" netlify netlify-honeypot="bot-field" hidden accept-charset="UTF-8">
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+      <!-- optional, schadet nicht: gleicher form-name wie im sichtbaren Formular -->
+      <input type="hidden" name="form-name" value="beratung" />
+      <!-- optionales Honeypot-Feld, falls du es explizit willst -->
+      <input type="text" name="bot-field" />
+    </form>
 
     <script type="module" src="/src/main.jsx"></script>
   </body>
