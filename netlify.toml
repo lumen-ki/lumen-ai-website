@@ -2,14 +2,28 @@
   command = "npm run build"
   publish = "dist"
 
-# (Optional – nur falls du /thank-you.html im /public hast)
+# (optional, nur lokal)
+[dev]
+  command = "npm run dev"
+  port = 5173
+  publish = "dist"
+
+# --- Redirects ---
+# a) /thank-you zuerst (sonst frisst die Catch-All-Regel das weg)
 [[redirects]]
   from = "/thank-you"
   to = "/thank-you.html"
   status = 200
 
-# SPA-Fallback für React-Routing
+# b) SPA-Catch-All (React) – immer als letzte Regel!
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+# c) www -> non-www (kannst du jederzeit umdrehen)
+[[redirects]]
+  from = "https://www.lumen-ai.de/*"
+  to = "https://lumen-ai.de/:splat"
+  status = 301
+  force = true

@@ -325,11 +325,6 @@ const ContactPage = () => (
 
 
 
-
-
-
-
-
   // Main Homepage Component
   const HomePage = () => (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
