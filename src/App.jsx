@@ -217,15 +217,15 @@ const ContactPage = () => (
 
         {/* Netlify-Form mit Honeypot + Redirect */}
         <form
-          name="beratung"
-          method="POST"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-          action="/thank-you"
-          className="space-y-6"
-        >
-          {/* wichtig für Netlify */}
-          <input type="hidden" name="form-name" value="beratung" />
+        name="beratung"
+        method="POST"
+       data-netlify="true"
+       netlify-honeypot="bot-field"
+       action="/thank-you"
+      acceptCharset="UTF-8"
+      className="space-y-6"
+      >
+  <input type="hidden" name="form-name" value="beratung" />
 
           {/* Honeypot-Feld – bleibt unsichtbar, Bots füllen es aus */}
           <p className="hidden" aria-hidden="true">
