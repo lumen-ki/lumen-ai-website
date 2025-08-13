@@ -379,7 +379,10 @@ const ContactPage = () => (
       <section id="home" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <div className="mb-8">
-            </div>
+            <Badge className="mb-4 bg-blue-100 text-blue-800 hover:bg-blue-200">
+              Die Zukunft der Effizienz ist hier
+            </Badge>
+          </div>
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
             Intelligente Automatisierung für ein{' '}
             <span className="text-blue-600">smarteres Unternehmen</span>
@@ -389,11 +392,6 @@ const ContactPage = () => (
             Wir erschließen transformative Kraft durch maßgeschneiderte Automatisierungs- und Optimierungslösungen.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <img loading="lazy" src={lumenLogo} alt="Lumen AI Logo" className="h-40 w-auto mx-auto mb-0 bg-transparent" />
-            <Badge className="mb-4 bg-blue-100 text-blue-800 hover:bg-blue-200">
-              Die Zukunft der Effizienz ist hier
-            </Badge>
-          
             <Button size="lg" className="bg-blue-600 hover:bg-blue-700" onClick={() => setCurrentPage('contact')}>
            Kostenlose Beratung <ChevronRight className="ml-2 h-4 w-4" />
             </Button>
