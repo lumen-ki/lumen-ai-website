@@ -217,84 +217,43 @@ const ContactPage = () => (
 
         {/* Netlify-Form mit Honeypot + Redirect */}
         <form
-          name="beratung"
-          method="POST"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          action="/thank-you"
-          acceptCharset="UTF-8"
-          className="space-y-6"
-        >
-          <input type="hidden" name="form-name" value="beratung" />
-          {/* Honeypot */}
-          <p className="hidden" aria-hidden="true">
-            <label> Lassen Sie dieses Feld leer:
-              <input name="bot-field" />
-            </label>
-          </p>
+  name="beratung"
+  method="POST"
+  data-netlify="true"
+  data-netlify-honeypot="bot-field"
+  action="/thank-you"
+  acceptCharset="UTF-8"
+  className="space-y-6"
+>
+  {/* Netlify braucht dieses Hidden-Feld */}
+  <input type="hidden" name="form-name" value="beratung" />
 
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
-              Name
-            </label>
-            <input
-              name="name"
-              required
-              className="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500"
-            />
-          </div>
+  {/* Honeypot gegen Spam */}
+  <p className="hidden" aria-hidden="true">
+    <label>
+      Nicht ausfüllen:
+      <input name="bot-field" />
+    </label>
+  </p>
 
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
-              E-Mail
-            </label>
-            <input
-              type="email"
-              name="email"
-              required
-              className="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500"
-            />
-          </div>
+  {/* Felder (Namen sind wichtig!) */}
+  <label className="block">
+    <span className="block mb-1">Name</span>
+    <input type="text" name="name" required className="w-full" />
+  </label>
 
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
-              Nachricht
-            </label>
-            <textarea
-              name="message"
-              rows="5"
-              required
-              className="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500"
-            />
-          </div>
+  <label className="block">
+    <span className="block mb-1">E-Mail</span>
+    <input type="email" name="email" required className="w-full" />
+  </label>
 
-          {/* DSGVO-Checkbox */}
-          <div className="flex items-start gap-3">
-            <input
-              id="privacy"
-              type="checkbox"
-              name="privacy"
-              required
-              className="mt-1 h-4 w-4 rounded border-gray-300"
-            />
-            <label htmlFor="privacy" className="text-sm text-gray-700">
-              Ich stimme der Verarbeitung meiner Daten gemäß der{" "}
-              <button
-                type="button"
-                className="text-blue-600 hover:underline"
-                onClick={() => setCurrentPage('legal')}
-                title="Datenschutzerklärung anzeigen"
-              >
-                Datenschutzerklärung
-              </button>{" "}
-              zu.
-            </label>
-          </div>
+  <label className="block">
+    <span className="block mb-1">Nachricht</span>
+    <textarea name="message" required className="w-full h-32"></textarea>
+  </label>
 
-          <Button type="submit" className="bg-blue-600 hover:bg-blue-700">
-            Nachricht senden
-          </Button>
-        </form>
+  <button type="submit" className="btn-primary">Absenden</button>
+</form>
 
         {/* Alternativen */}
         <div className="mt-10 border-t pt-6">
