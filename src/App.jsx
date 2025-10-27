@@ -122,107 +122,127 @@ const LegalPage = () => {
           <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
             
             {/* Datenschutz */}
-            {activeTab === "datenschutz" && (
-              <div>
-                <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-                  Datenschutzerklärung
-                </h1>
-                <p className="text-sm text-gray-600 mb-8">Stand: Januar 2025</p>
-                <p className="text-gray-700">
-                  Datenschutzerklärung
+{activeTab === "datenschutz" && (
+  <div>
+    <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+      Datenschutzerklärung
+    </h1>
+    <p className="text-sm text-gray-600 mb-8">Stand: Oktober 2025</p>
 
-                  Verantwortlich:
-                  Andic und Ardeshirzadeh Pudami GbR
-                  Wörthstraße 44
-                  72764 Reutlingen
-                  E-Mail: pudami.resales@gmail.com
-                  Website: https://www.lumen-ai.de
+    <div className="text-gray-700 space-y-4">
+      <p><strong>Verantwortlich:</strong><br />
+        Andic und Ardeshirzadeh Pudami GbR<br />
+        Wörthstraße 44<br />
+        72764 Reutlingen<br />
+        E-Mail:{" "}
+        <a href="mailto:pudami.resales@gmail.com" className="text-blue-600 underline">
+          pudami.resales@gmail.com
+        </a><br />
+        Website:{" "}
+        <a href="https://www.lumen-ai.de" className="text-blue-600 underline">
+          https://www.lumen-ai.de
+        </a>
+      </p>
 
-                  1. Allgemeine Hinweise
-                  Wir nehmen den Schutz Ihrer persönlichen Daten ernst. Personenbezogene Daten werden gemäß DSGVO und BDSG verarbeitet.
+      <p><strong>1. Allgemeine Hinweise</strong><br />
+        Wir nehmen den Schutz Ihrer persönlichen Daten ernst. Personenbezogene Daten werden gemäß DSGVO und BDSG verarbeitet.
+      </p>
 
-                  2. Erhebung und Verarbeitung personenbezogener Daten
-                  Wir erheben und verarbeiten personenbezogene Daten (Name, E-Mail, Telefonnummer), wenn Sie uns diese über das Kontaktformular oder per E-Mail zur Verfügung stellen.
+      <p><strong>2. Erhebung und Verarbeitung personenbezogener Daten</strong><br />
+        Wir erheben und verarbeiten personenbezogene Daten (Name, E-Mail, Telefonnummer), wenn Sie uns diese über das Kontaktformular oder per E-Mail zur Verfügung stellen.
+      </p>
 
-                  3. Cookies
-                  Unsere Website verwendet Cookies, um die Nutzung zu erleichtern. Sie können Cookies jederzeit in den Browsereinstellungen deaktivieren.
+      <p><strong>3. Cookies</strong><br />
+        Unsere Website verwendet Cookies, um die Nutzung zu erleichtern. Sie können Cookies jederzeit in den Browsereinstellungen deaktivieren.
+      </p>
 
-                  4. Server-Logfiles
-                  Beim Aufruf der Website werden automatisch Informationen (IP-Adresse, Browsertyp, Datum und Uhrzeit) gespeichert. Diese Daten dienen der Sicherheit und werden nicht mit anderen Datenquellen zusammengeführt.
+      <p><strong>4. Server-Logfiles</strong><br />
+        Beim Aufruf der Website werden automatisch Informationen (IP-Adresse, Browsertyp, Datum und Uhrzeit) gespeichert. Diese Daten dienen der Sicherheit und werden nicht mit anderen Datenquellen zusammengeführt.
+      </p>
 
-                  5. Kontaktformular
-                  Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben zwecks Bearbeitung der Anfrage und für Anschlussfragen gespeichert.
+      <p><strong>5. Kontaktformular</strong><br />
+        Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben zwecks Bearbeitung der Anfrage und für Anschlussfragen gespeichert.
+      </p>
 
-                  6. Rechtsgrundlage der Verarbeitung
-                  Die Verarbeitung Ihrer Daten erfolgt nach Art. 6 Abs. 1 lit. b DSGVO zur Vertragserfüllung und nach Art. 6 Abs. 1 lit. f DSGVO aufgrund berechtigter Interessen.
+      <p><strong>6. Rechtsgrundlage der Verarbeitung</strong><br />
+        Die Verarbeitung Ihrer Daten erfolgt nach Art. 6 Abs. 1 lit. b DSGVO zur Vertragserfüllung und nach Art. 6 Abs. 1 lit. f DSGVO aufgrund berechtigter Interessen.
+      </p>
 
-                  7. Ihre Rechte
-                  Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung sowie das Recht auf Widerspruch und Datenübertragbarkeit.
+      <p><strong>7. Ihre Rechte</strong><br />
+        Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung sowie das Recht auf Widerspruch und Datenübertragbarkeit.
+      </p>
 
-                  8. Speicherdauer
-                  Wir speichern Ihre Daten nur so lange, wie es für die Bearbeitung Ihrer Anfrage und zur Vertragserfüllung notwendig ist.
+      <p><strong>8. Speicherdauer</strong><br />
+        Wir speichern Ihre Daten nur so lange, wie es für die Bearbeitung Ihrer Anfrage und zur Vertragserfüllung notwendig ist.
+      </p>
 
-                  9. SSL- bzw. TLS-Verschlüsselung
-                  Unsere Website nutzt SSL- bzw. TLS-Verschlüsselung, um Ihre Daten zu schützen.
+      <p><strong>9. SSL- bzw. TLS-Verschlüsselung</strong><br />
+        Unsere Website nutzt SSL- bzw. TLS-Verschlüsselung, um Ihre Daten zu schützen.
+      </p>
 
-                  10. Ansprechpartner
-                  Bei Fragen zum Datenschutz wenden Sie sich bitte an pudami.resales@gmail.com.
+      <p><strong>10. Ansprechpartner</strong><br />
+        Bei Fragen zum Datenschutz wenden Sie sich bitte an{" "}
+        <a href="mailto:pudami.resales@gmail.com" className="text-blue-600 underline">
+          pudami.resales@gmail.com
+        </a>.
+      </p>
+    </div>
+  </div>
+)}
 
-                </p>
-              </div>
-            )}
 
             {/* AGB */}
-            {activeTab === "agb" && (
-              <div>
-                <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-                  Allgemeine Geschäftsbedingungen (AGB)
-                </h1>
-                <p className="text-sm text-gray-600 mb-8">Stand: Januar 2025</p>
-                <p className="text-gray-700">
-                  AGB der Andic und Ardeshirzadeh Pudami GbR (Lumen-AI)
+{activeTab === "agb" && (
+  <div>
+    <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+      Allgemeine Geschäftsbedingungen (AGB)
+    </h1>
+    <p className="text-sm text-gray-600 mb-8">Stand: Januar 2025</p>
 
-                  § 1 Geltungsbereich
-                  (1) Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Verträge zwischen der Andic und Ardeshirzadeh Pudami GbR (im Folgenden „Lumen-AI“) und ihren Kunden.
-                  (2) Unsere Leistungen richten sich ausschließlich an Unternehmer im Sinne des § 14 BGB. Ein Widerrufsrecht nach § 355 BGB besteht daher nicht.
+    <div className="text-gray-700 space-y-4">
+      <p><strong>AGB der Andic und Ardeshirzadeh Pudami GbR (Lumen-AI)</strong></p>
 
-                  § 2 Vertragsgegenstand
-                  Lumen-AI bietet Dienstleistungen im Bereich KI-Beratung, Prozessautomatisierung, generative KI-Lösungen, Content-Automatisierung, KI-Strategie & Readiness Assessment, maßgeschneiderte KI-Tool-Entwicklung sowie KI-Sicherheit & Compliance.
+      <p><strong>§ 1 Geltungsbereich</strong><br />
+      (1) Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Verträge zwischen der Andic und Ardeshirzadeh Pudami GbR (im Folgenden „Lumen-AI“) und ihren Kunden.<br />
+      (2) Unsere Leistungen richten sich ausschließlich an Unternehmer im Sinne des § 14 BGB. Ein Widerrufsrecht nach § 355 BGB besteht daher nicht.</p>
 
-                  § 3 Vertragsschluss
-                  Der Vertrag kommt zustande, wenn der Kunde ein schriftliches Angebot per E-Mail bestätigt oder eine Beauftragung in Textform erteilt.
+      <p><strong>§ 2 Vertragsgegenstand</strong><br />
+      Lumen-AI bietet Dienstleistungen im Bereich KI‑Beratung, Prozessautomatisierung, generative KI‑Lösungen, Content‑Automatisierung, KI‑Strategie & Readiness Assessment, maßgeschneiderte KI‑Tool‑Entwicklung sowie KI‑Sicherheit & Compliance.</p>
 
-                  § 4 Leistungsumfang
-                  (1) Der konkrete Leistungsumfang wird individuell mit dem Kunden vereinbart.
-                  (2) Anpassungen und Erweiterungen bedürfen einer schriftlichen Vereinbarung.
+      <p><strong>§ 3 Vertragsschluss</strong><br />
+      Der Vertrag kommt zustande, wenn der Kunde ein schriftliches Angebot per E‑Mail bestätigt oder eine Beauftragung in Textform erteilt.</p>
 
-                  § 5 Vergütung
-                  (1) Die Abrechnung erfolgt nach Stunden- oder Tagessätzen bzw. zu einem vereinbarten Festpreis.
-                  (2) Alle Preise verstehen sich netto zuzüglich der gesetzlichen Umsatzsteuer.
-                  (3) Rechnungen sind innerhalb von 14 Tagen nach Erhalt ohne Abzug fällig.
+      <p><strong>§ 4 Leistungsumfang</strong><br />
+      (1) Der konkrete Leistungsumfang wird individuell mit dem Kunden vereinbart.<br />
+      (2) Anpassungen und Erweiterungen bedürfen einer schriftlichen Vereinbarung.</p>
 
-                  § 6 Mitwirkungspflichten
-                  Der Kunde stellt alle notwendigen Informationen und Daten rechtzeitig und vollständig zur Verfügung, die für die Erbringung der vereinbarten Leistungen erforderlich sind.
+      <p><strong>§ 5 Vergütung</strong><br />
+      (1) Die Abrechnung erfolgt nach Stunden‑ oder Tagessätzen bzw. zu einem vereinbarten Festpreis.<br />
+      (2) Alle Preise verstehen sich netto zuzüglich der gesetzlichen Umsatzsteuer.<br />
+      (3) Rechnungen sind innerhalb von 14 Tagen nach Erhalt ohne Abzug fällig.</p>
 
-                  § 7 Haftung
-                  (1) Lumen-AI haftet nur für Vorsatz und grobe Fahrlässigkeit. 
-                  (2) Für leichte Fahrlässigkeit haften wir nur bei Verletzung wesentlicher Vertragspflichten (Kardinalpflichten).
-                  (3) Die Haftung ist auf den vertragstypischen, vorhersehbaren Schaden begrenzt.
+      <p><strong>§ 6 Mitwirkungspflichten</strong><br />
+      Der Kunde stellt alle notwendigen Informationen und Daten rechtzeitig und vollständig zur Verfügung, die für die Erbringung der vereinbarten Leistungen erforderlich sind.</p>
 
-                  § 8 Vertraulichkeit
-                  Alle im Rahmen der Zusammenarbeit erlangten Informationen werden vertraulich behandelt.
+      <p><strong>§ 7 Haftung</strong><br />
+      (1) Lumen‑AI haftet nur für Vorsatz und grobe Fahrlässigkeit.<br />
+      (2) Für leichte Fahrlässigkeit haften wir nur bei Verletzung wesentlicher Vertragspflichten (Kardinalpflichten).<br />
+      (3) Die Haftung ist auf den vertragstypischen, vorhersehbaren Schaden begrenzt.</p>
 
-                  § 9 Datenschutz
-                  Personenbezogene Daten werden ausschließlich gemäß der Datenschutz-Grundverordnung (DSGVO) verarbeitet. Details siehe Datenschutzerklärung.
+      <p><strong>§ 8 Vertraulichkeit</strong><br />
+      Alle im Rahmen der Zusammenarbeit erlangten Informationen werden vertraulich behandelt.</p>
 
-                  § 10 Schlussbestimmungen
-                  (1) Es gilt das Recht der Bundesrepublik Deutschland.
-                  (2) Gerichtsstand für alle Streitigkeiten ist Reutlingen, sofern der Kunde Kaufmann ist.
-                  (3) Änderungen und Ergänzungen des Vertrags bedürfen der Schriftform.
+      <p><strong>§ 9 Datenschutz</strong><br />
+      Personenbezogene Daten werden ausschließlich gemäß der Datenschutz‑Grundverordnung (DSGVO) verarbeitet. Details siehe Datenschutzerklärung.</p>
 
-                </p>
-              </div>
-            )}
+      <p><strong>§ 10 Schlussbestimmungen</strong><br />
+      (1) Es gilt das Recht der Bundesrepublik Deutschland.<br />
+      (2) Gerichtsstand für alle Streitigkeiten ist Reutlingen, sofern der Kunde Kaufmann ist.<br />
+      (3) Änderungen und Ergänzungen des Vertrags bedürfen der Schriftform.</p>
+    </div>
+  </div>
+)}
+
 
             {/* Impressum */}
 {activeTab === "impressum" && (
