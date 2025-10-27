@@ -129,7 +129,45 @@ const LegalPage = () => {
                 </h1>
                 <p className="text-sm text-gray-600 mb-8">Stand: Januar 2025</p>
                 <p className="text-gray-700">
-                  Hier kommt dein Datenschutztext rein …
+                  Datenschutzerklärung
+
+                  Verantwortlich:
+                  Andic und Ardeshirzadeh Pudami GbR
+                  Wörthstraße 44
+                  72764 Reutlingen
+                  E-Mail: pudami.resales@gmail.com
+                  Website: https://www.lumen-ai.de
+
+                  1. Allgemeine Hinweise
+                  Wir nehmen den Schutz Ihrer persönlichen Daten ernst. Personenbezogene Daten werden gemäß DSGVO und BDSG verarbeitet.
+
+                  2. Erhebung und Verarbeitung personenbezogener Daten
+                  Wir erheben und verarbeiten personenbezogene Daten (Name, E-Mail, Telefonnummer), wenn Sie uns diese über das Kontaktformular oder per E-Mail zur Verfügung stellen.
+
+                  3. Cookies
+                  Unsere Website verwendet Cookies, um die Nutzung zu erleichtern. Sie können Cookies jederzeit in den Browsereinstellungen deaktivieren.
+
+                  4. Server-Logfiles
+                  Beim Aufruf der Website werden automatisch Informationen (IP-Adresse, Browsertyp, Datum und Uhrzeit) gespeichert. Diese Daten dienen der Sicherheit und werden nicht mit anderen Datenquellen zusammengeführt.
+
+                  5. Kontaktformular
+                  Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben zwecks Bearbeitung der Anfrage und für Anschlussfragen gespeichert.
+
+                  6. Rechtsgrundlage der Verarbeitung
+                  Die Verarbeitung Ihrer Daten erfolgt nach Art. 6 Abs. 1 lit. b DSGVO zur Vertragserfüllung und nach Art. 6 Abs. 1 lit. f DSGVO aufgrund berechtigter Interessen.
+
+                  7. Ihre Rechte
+                  Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung sowie das Recht auf Widerspruch und Datenübertragbarkeit.
+
+                  8. Speicherdauer
+                  Wir speichern Ihre Daten nur so lange, wie es für die Bearbeitung Ihrer Anfrage und zur Vertragserfüllung notwendig ist.
+
+                  9. SSL- bzw. TLS-Verschlüsselung
+                  Unsere Website nutzt SSL- bzw. TLS-Verschlüsselung, um Ihre Daten zu schützen.
+
+                  10. Ansprechpartner
+                  Bei Fragen zum Datenschutz wenden Sie sich bitte an pudami.resales@gmail.com.
+
                 </p>
               </div>
             )}
@@ -142,23 +180,102 @@ const LegalPage = () => {
                 </h1>
                 <p className="text-sm text-gray-600 mb-8">Stand: Januar 2025</p>
                 <p className="text-gray-700">
-                  Hier kommt dein AGB-Text rein …
+                  AGB der Andic und Ardeshirzadeh Pudami GbR (Lumen-AI)
+
+                  § 1 Geltungsbereich
+                  (1) Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Verträge zwischen der Andic und Ardeshirzadeh Pudami GbR (im Folgenden „Lumen-AI“) und ihren Kunden.
+                  (2) Unsere Leistungen richten sich ausschließlich an Unternehmer im Sinne des § 14 BGB. Ein Widerrufsrecht nach § 355 BGB besteht daher nicht.
+
+                  § 2 Vertragsgegenstand
+                  Lumen-AI bietet Dienstleistungen im Bereich KI-Beratung, Prozessautomatisierung, generative KI-Lösungen, Content-Automatisierung, KI-Strategie & Readiness Assessment, maßgeschneiderte KI-Tool-Entwicklung sowie KI-Sicherheit & Compliance.
+
+                  § 3 Vertragsschluss
+                  Der Vertrag kommt zustande, wenn der Kunde ein schriftliches Angebot per E-Mail bestätigt oder eine Beauftragung in Textform erteilt.
+
+                  § 4 Leistungsumfang
+                  (1) Der konkrete Leistungsumfang wird individuell mit dem Kunden vereinbart.
+                  (2) Anpassungen und Erweiterungen bedürfen einer schriftlichen Vereinbarung.
+
+                  § 5 Vergütung
+                  (1) Die Abrechnung erfolgt nach Stunden- oder Tagessätzen bzw. zu einem vereinbarten Festpreis.
+                  (2) Alle Preise verstehen sich netto zuzüglich der gesetzlichen Umsatzsteuer.
+                  (3) Rechnungen sind innerhalb von 14 Tagen nach Erhalt ohne Abzug fällig.
+
+                  § 6 Mitwirkungspflichten
+                  Der Kunde stellt alle notwendigen Informationen und Daten rechtzeitig und vollständig zur Verfügung, die für die Erbringung der vereinbarten Leistungen erforderlich sind.
+
+                  § 7 Haftung
+                  (1) Lumen-AI haftet nur für Vorsatz und grobe Fahrlässigkeit. 
+                  (2) Für leichte Fahrlässigkeit haften wir nur bei Verletzung wesentlicher Vertragspflichten (Kardinalpflichten).
+                  (3) Die Haftung ist auf den vertragstypischen, vorhersehbaren Schaden begrenzt.
+
+                  § 8 Vertraulichkeit
+                  Alle im Rahmen der Zusammenarbeit erlangten Informationen werden vertraulich behandelt.
+
+                  § 9 Datenschutz
+                  Personenbezogene Daten werden ausschließlich gemäß der Datenschutz-Grundverordnung (DSGVO) verarbeitet. Details siehe Datenschutzerklärung.
+
+                  § 10 Schlussbestimmungen
+                  (1) Es gilt das Recht der Bundesrepublik Deutschland.
+                  (2) Gerichtsstand für alle Streitigkeiten ist Reutlingen, sofern der Kunde Kaufmann ist.
+                  (3) Änderungen und Ergänzungen des Vertrags bedürfen der Schriftform.
+
                 </p>
               </div>
             )}
 
             {/* Impressum */}
-            {activeTab === "impressum" && (
-              <div>
-                <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-                  Impressum
-                </h1>
-                <p className="text-sm text-gray-600 mb-8">Stand: Januar 2025</p>
-                <p className="text-gray-700">
-                  Hier kommt dein Impressum rein …
-                </p>
-              </div>
-            )}
+{activeTab === "impressum" && (
+  <div>
+    <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+      Impressum
+    </h1>
+    <p className="text-sm text-gray-600 mb-8">Stand: Januar 2025</p>
+
+    <div className="text-gray-700 space-y-4">
+      <p><strong>Angaben gemäß § 5 TMG:</strong></p>
+      <p>
+        Andic und Ardeshirzadeh Pudami GbR<br />
+        Wörthstraße 44<br />
+        72764 Reutlingen<br />
+        Deutschland
+      </p>
+
+      <p><strong>Vertreten durch:</strong><br />
+        Herr Andic und Herr Ardeshirzadeh Pudami
+      </p>
+
+      <p><strong>Kontakt:</strong><br />
+        E-Mail:{" "}
+        <a href="mailto:pudami.resales@gmail.com" className="text-blue-600 underline">
+          pudami.resales@gmail.com
+        </a><br />
+        Website:{" "}
+        <a href="https://www.lumen-ai.de" className="text-blue-600 underline">
+          www.lumen-ai.de
+        </a>
+      </p>
+
+      <p><strong>Umsatzsteuer-ID:</strong><br />
+        (Falls vorhanden, hier eintragen – ansonsten diesen Abschnitt entfernen oder durch „nicht vorhanden“ ersetzen.)
+      </p>
+
+      <p><strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</strong><br />
+        Andic und Ardeshirzadeh Pudami GbR<br />
+        Wörthstraße 44<br />
+        72764 Reutlingen
+      </p>
+
+      <p>
+        <em>
+          Haftungsausschluss: Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. 
+          Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
+        </em>
+      </p>
+    </div>
+  </div>
+)}
+
 
             {/* Kontaktblock – immer sichtbar */}
             <div className="border-t border-gray-200 pt-8 mt-8">
